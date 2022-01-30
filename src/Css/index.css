@@ -1,0 +1,198 @@
+body{
+    background-color: rgb(31, 30, 30);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+}
+
+.container{
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#navbar {
+    top: 0px;
+    font-size: 20px;
+    position: fixed;
+    border-bottom: 1px whitesmoke solid;
+    width: 100%;
+    background-color: black;
+}
+
+#navbar #logo{
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+#navbar ul{
+    padding: 0px;
+    list-style: none;
+    position: fixed;
+    top: 0.4%;
+    right: 0%;
+}
+
+#navbar li{
+    display: inline;
+}
+
+#navbar a{
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 0px 15px;
+    border-right: 1px whitesmoke solid;
+}
+
+#navbar a:hover{
+    color: gray;   
+}
+
+#navbar li:last-child a{
+    border-right: none;
+    padding-right: 50px;
+}
+
+#home{
+    background-image: url("../../Images/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 25vh;
+    padding-top: 75px;
+}
+
+#home #header{
+    color:whitesmoke;
+    border-bottom: whitesmoke;
+    text-align: left;
+}
+
+#home #header h1{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+#home #header h2{
+    line-height: 0;
+    font-size: 25px;
+}
+
+.section{
+    background-color: gray;
+    border-radius: 10px;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.section h1{
+    font-size: 40px
+}
+
+.section h1, .section h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+#aboutMe{
+    margin-top: 95px;
+}
+
+#aboutMe #aboutMeInfo{
+    width: 40%;
+    max-width: 40%;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+    border: 1px red solid;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(49, 51, 47);
+    border-radius: 15px;
+    float: left;
+}
+
+#aboutMe #skills {
+    width: 40%;
+    max-width: 40%;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+    border: 1px red solid;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(49, 51, 47);
+    border-radius: 15px;
+    float: right;
+}
+
+#aboutMe #skillList{
+    padding-left: 0px;
+    list-style: none;
+}
+
+#aboutMe #skillList li{
+    display: inline;
+    border: 1px white solid;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 15px;
+    
+}
+
+.project{
+    width: auto;
+    max-width: 100%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px red solid;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgb(49, 51, 47);
+    border-radius: 15px;
+}
+
+#projects #logo1{
+    width: 150px;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+#projects #logo2{
+    width: 150px;
+    border-radius: 10%;
+    padding: 5px;
+}
+
+#contact{
+    background-color: gray;
+    width: 85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#contact h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+#footer{
+    background-color: black;
+    margin-top: 20px;
+    border-top: 1px whitesmoke solid;
+    text-align: center
+}
+
+#footer .icons{
+    text-decoration: none;
+    width: 50px;
+    background-color: rgb(182, 178, 178);
+    border-radius: 50%;
+    margin: 5px;
+}
