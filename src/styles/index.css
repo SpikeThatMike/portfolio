@@ -72,7 +72,7 @@ h1 {
     color: black;
     position: relative;
     transform: scale(0);
-    transition: all 300ms ease;
+    transition: all 400ms ease;
 }
 
 #languages #row .language img {
@@ -122,6 +122,7 @@ h1 {
 #projects .project:hover .hidden {
     display: block;
     animation: fadeIn 1000ms;
+    animation: fadeOut 1000ms;
 }
 
 #projects .project:hover .image {
@@ -162,11 +163,21 @@ h1 {
 }
 
 @keyframes fadeIn {
-    from {
-         opacity: 0.05;
+    0% {
+         opacity: 0.01;
     }
 
-    to {
+    100% {
          opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    100% {
+         opacity: 1;
+    }
+
+    0% {
+         opacity: 0;
     }
 }
