@@ -7,14 +7,24 @@
     <link rel="stylesheet" href="./styles/navbar.css">
     <title>SpikeThatMike</title>
 </head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script>
+    $(function() {
+      $('.link').click(function() {
+        const id = $(this).attr('href');
+        $('html,body').animate({ scrollTop: $(id).offset().top }, 500);
+        return false;
+      });
+    });
+</script>
 <body>
     <nav id="navbar" style="margin-bottom: 50px;">
         <div id="links">
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#languages">Languages</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contacts">Contact</a></li>
+                <li><a class="link" href="#about">About me</a></li>
+                <li><a class="link" href="#languages">Languages</a></li>
+                <li><a class="link" href="#projects">Projects</a></li>
+                <li><a class="link" href="#contacts">Contact</a></li>
             </ul>
         </div>
     </nav>
