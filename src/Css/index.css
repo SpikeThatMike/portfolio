@@ -57,6 +57,54 @@ body{
     padding-right: 50px;
 }
 
+#navbar #hamburger {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+#navbar #hamburger .bar{
+    height: 3px;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+@media (max-width: 530px){
+    #navbar #hamburger{
+        display: flex;
+    }
+
+    #navbar{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #navbar a{
+        border-right: none;
+        border-bottom: 1px whitesmoke solid;
+    }
+
+    #navbar li:last-child a{
+        border-right: none;
+    }
+
+    #navbar li {
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar ul{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
 #home{
     background-image: url("../../Images/background.png");
     background-repeat: no-repeat;
