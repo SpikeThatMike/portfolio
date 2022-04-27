@@ -1,99 +1,121 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>SpikeThatMike</title>
-        <meta name="description" content="SpikeThatMike's personal website">
-        <link rel="stylesheet" href="./Css/index.css">
-    </head>
-    <body>
-
-        <nav id="navbar">
-            <img src="./Images/logo.png" alt="No image found" id="logo">
-			<a href="#" id="hamburger">
-				<span class="bar"></span>
-				<span class="bar"></span>
-				<span class="bar"></span>
-			</a>
-            <div class="container">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#aboutMe">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-
-		<!--
-		<section id="home">
-			<header id="header">
-				<div class="container">
-					<h1 id="welcome">Welcome to my website</h1>
-					<h2 id="welcomeMsg">I develop custom discord bots for minecraft & discord</h2>
-				</div>
-			</header>
-		</section>
-		-->
-
-		<section class="section" id="aboutMe">
-			<div class="container">
-				<h1>About Me</h1>
-				<div id="aboutMeInfo">
-					<p>Over the past few years, coding has became my passion and now love developing new projects to expand my knowledge and build usefull applications. I am currently learning HTML & CSS to improve my understanding of web development</p>
-				</div>
-				<div id="skills">
-					<h3>Skills</h3>
-					<ul id="skillList">
-						<li>JavaScript</li>
-						<li>NodeJS</li>
-						<li>Python</li>
-						<li>Java</li>
-					</ul>
-				</div>
-			</div>
-		</section>
-
-		<section class="section" id="projects">
-			<div class="container">
-				<h1>Projects</h1>
-				<div class="project">
-					<h2>Project 1</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus magni praesentium adipisci laudantium incidunt a placeat explicabo, soluta voluptatibus reprehenderit autem, officia vitae delectus, fugiat repellat nesciunt ipsum molestias laborum.</p>
-					<img src="./Images/logo.png" alt="No image found" id="logo1">
-					<img src="./Images/logo.png" alt="No image found" id="logo2">
-				</div>
-				<div class="project">
-					<h2>Project 2</h2>
-					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum saepe et, sint iusto necessitatibus eaque atque quos nobis. Officiis dignissimos laboriosam fugiat dicta illo voluptas facere unde repellendus officia eligendi?</p>
-				</div>
-				<div class="project">
-					<h2>Project 3</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum magnam architecto vero minus aperiam atque repellendus ipsa itaque pariatur! Assumenda sapiente atque temporibus? Atque illum rem magnam magni officiis?</p>
-				</div>
-				<div class="project">
-					<h2>Project 4</h2>
-					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum magnam architecto vero minus aperiam atque repellendus ipsa itaque pariatur! Assumenda sapiente atque temporibus? Atque illum rem magnam magni officiis?</p>
-				</div>
-			</div>
-			
-		</section>
-
-		<section class="section" id="contact">
-			<div class="container">
-				<h1>Contact Me</h1>
-			</div>
-			
-		</section>
-
-        <footer id="footer">
-            <p>Copyright &copy; 2022 SpikeThatMike</p>
-			<a href="https://github.com/SpikeThatMike">
-				<img class="icons" src="./Images/github.png" alt="No image found">
-			</a>
-			<a href="https://discord.gg/uUwZ4cYUUd">
-				<img class="icons" src="./Images/discord.png" alt="No image found">
-			</a>
-        </footer>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/navbar.css">
+    <title>SpikeThatMike</title>
+</head>
+<body>
+    <nav id="navbar" style="margin-bottom: 50px;">
+        <div id="links">
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contacts">Contact</a></li>
+            </ul>
         </div>
-    </body>
+    </nav>
+    <br>
+    <br>
+    <section id="about-me">
+        <div class="container">
+            <div id="image">
+                <img src="https://cdn.discordapp.com/avatars/320542523586117632/45bcfe1afc1ec2221f2a57220bfe12b8.webp?size=128" alt="Profile picture">
+            </div>
+            <div id="text">
+                <h2>Hi, I'm SpikeThatMike</h2>
+                <p>I develop <b style="color: green;">NodeJS</b> applications for discord and minecraft while trying to learn new languages!</p>
+                <p>I also do free lancing / commissions in my free time outside of college.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="languages">
+        <div class="">
+            <h1>Languages</h1>
+            <div id="row">
+                <div class="language">
+                    <img src="../images/javascript.ico" alt="Javascript">
+                    <div class="hidden">Javascript</div>
+                </div>
+                <div class="language">
+                    <img src="../images/html.ico" alt="HTML5">
+                    <div class="hidden">HTML5</div>
+                </div>
+                <div class="language">
+                    <img src="../images/css3.ico" alt="CSS3">
+                    <div class="hidden">CSS3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section id="projects">
+        <div class="container">
+            <h1>Some of my projects</h1>
+            <div class="column">
+                <div class="project">
+                    <div class="name"><b style="color: green;">Faction Bot</b></div>
+                    <div><img class="image" src="../images/faction-bot.png" alt="Faction Bot"></div>
+                    <div class="description hidden">This application was specify made to enchance peoples experience while playing a minecraft gamemode called factions where people compete in teams. This application helped automate tasks whick now takes seconds instead of minutes and gives to ability to use commands from minecraft to interaction with discord</div>
+                    <div class="tech-used hidden">
+                        <div class="tech-desc">Some of the tech used for this project</div>
+                        <div class="tech">
+                            <img src="../images/nodejs.ico" alt="NodeJS">
+                            <div>Node</div>
+                        </div>
+                        <div class="tech">
+                            <img src="../images/discordjs.png" alt="Discord.JS">
+                            <div>Discord.JS</div>
+                        </div>
+                        <div class="tech">
+                            <img src="../images/mineflayer.png" alt="Mineflayer">
+                            <div>Mineflayer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="name"><b style="color: rgb(75, 75, 253);">Pacfish</b></div>
+                    <div><img class="image" src="../images/pacfish.png" alt="Pacfish"></div>
+                    <div class="description hidden">This application is a public discord bot which anyone can invite to their discord server to help moderators manage different channels. Pacfish also includes features like a ticket system, suggestion system, ecomoncy system & more! Unfortunately, progress on this project is paused due to exams at college.</div>
+                    <div class="tech-used hidden">
+                        <div class="tech-desc">Some of the tech used for this project</div>
+                        <div class="tech">
+                            <img src="../images/nodejs.ico" alt="NodeJS">
+                            <div>Node</div>
+                        </div>
+                        <div class="tech">
+                            <img src="../images/discordjs.png" alt="Discord.JS">
+                            <div>Discord.JS</div>
+                        </div>
+                        <div class="tech">
+                            <img src="../images/mongodb.ico" alt="MongoDB">
+                            <div>MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts">
+        <div class="container">
+            <h1>Contact me!</h1>
+            <div class="social">
+                <a target="_block" href="https://github.com/SpikeThatMike"><img src="../images/github.ico" alt="https://github.com/SpikeThatMike" title="Github"></a>
+            </div>
+            <div class="social">
+                <a target="_block" href="https://www.fiverr.com/spikethatmike?up_rollout=true"><img src="../images/fiverr.ico" alt="https://www.fiverr.com/spikethatmike?up_rollout=true" title="Fiverr"></a>
+            </div>
+            <div class="social">
+                <a target="_block" href="https://discord.gg/6rAwtJQ9nf"><img src="../images/discord.ico" alt="https://discord.gg/6rAwtJQ9nf" title="Discord"></a>
+            </div>
+        </div>
+    </section>
+</body>
 </html>

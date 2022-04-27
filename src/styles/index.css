@@ -1,0 +1,168 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 18px;
+    user-select: none;
+}
+
+section {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.container {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.hidden {
+    display: none;
+}
+
+#about-me {
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+#about-me #image {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+#about-me #image img {
+    border-radius: 50%;
+    border: 1px solid rgb(146, 146, 146);
+}
+
+#about-me p {
+    margin: 5px;
+}
+
+#languages {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border: 1px rgba(165, 165, 165, 0.1) solid;
+    background-color: rgba(214, 214, 214, 0.2);
+}
+
+#languages #row .language {
+    display: inline-block;
+    padding: 0px;
+    margin: 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+
+#languages #row .language img {
+    width: auto;
+    max-width: 175px;
+    border-radius: 5%;
+}
+
+#languages #row .language:hover img{
+    transform: scale(0.9);
+    opacity: 0.6;
+}
+
+#languages #row .language:hover .hidden {
+    display: block;
+}
+
+#projects {
+    width: 60%;
+    margin: auto;
+}
+
+#projects .project {
+    border: 1px rgba(224, 224, 224, 0.4) solid;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 100px;
+    background-color: rgba(224, 224, 224, 0.3);
+}
+
+#projects .project .image {
+    max-width: 500px;
+    max-height: 500px;;
+    border-radius: 5px;
+}
+
+#projects .project img {
+    width: 100%;
+    height: 100%;
+}
+
+#projects .project .name {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+#projects .project:hover .hidden {
+    display: block;
+    animation: fadeIn 2s;
+}
+
+#projects .project:hover .image {
+    filter: blur(1px);
+}
+
+#projects .project .tech-desc {
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+#projects .project .tech {
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px;
+}
+
+#projects .project .tech img {
+    width: auto;
+    max-width: 50px;
+    border-radius: 5%;
+}
+
+#contacts {
+    border: 1px rgba(165, 165, 165, 0.1) solid;
+    background-color: rgba(214, 214, 214, 0.2);
+}
+
+#contacts .social {
+    display: inline-block;
+    margin: 20px;
+}
+
+#contacts .social img {
+    width: auto;
+    max-width: 65px;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {
+         opacity: 0.05;
+    }
+
+    to {
+         opacity: 1;
+    }
+}
