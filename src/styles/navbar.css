@@ -98,6 +98,11 @@ nav {
         background-color: rgb(196, 196, 196);
     }
 
+    .link {
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
     .link::after {
         content: none !important;
     }
