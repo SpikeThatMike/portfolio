@@ -47,3 +47,58 @@ nav {
     width: 100%;
     left: 0;
 }
+
+#hamburger {
+    position: absolute;
+    top: 23px;
+    right: 20px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger-bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10%;
+}
+
+@media (max-width: 600px) {
+    #hamburger {
+        display: flex;
+    }
+    #links {
+        margin-top: 50px;
+        display: none;
+        width: 100%;
+    }
+
+    #links.active {
+        display: flex;
+    }
+
+    #links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #links li {
+        text-align: center;
+        border-top: 1px black solid;
+        border-bottom: 1px black solid;
+        margin: 0px;
+        padding: 4px;
+    }
+
+    #links li:hover {
+        background-color: rgb(196, 196, 196);
+    }
+
+    .link::after {
+        content: none !important;
+    }
+}

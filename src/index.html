@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/navbar.css">
+    <link rel="stylesheet" href="./styles/load.css">
     <title>SpikeThatMike</title>
 </head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
     $(function() {
       $('.link').click(function() {
@@ -16,119 +17,139 @@
         return false;
       });
     });
+    $(window).on("load", function() {
+            $(".load").fadeOut(500);
+            $(".content").fadeIn(2000);
+    });
+    $(function() {
+        $("#hamburger").click(function() {
+            $("#links").toggleClass("active");
+        });
+    });
 </script>
 <body>
-    <nav style="margin-bottom: 50px;">
-        <div id="links">
-            <ul>
-                <li><a class="link" href="#about">About me</a></li>
-                <li><a class="link" href="#languages">Languages</a></li>
-                <li><a class="link" href="#projects">Projects</a></li>
-                <li><a class="link" href="#contacts">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <br>
-    <br>
-    <section id="about-me">
-        <div class="container">
-            <div id="image">
-                <img src="https://cdn.discordapp.com/avatars/320542523586117632/45bcfe1afc1ec2221f2a57220bfe12b8.webp?size=128" alt="Profile picture">
+    <div class="load">
+        <div id="loading-text">Loading<span>...</span></div>
+        <div id="spin"></div>
+    </div>
+    <div class="content">
+        <nav style="margin-bottom: 50px;">
+            <div id="hamburger">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
             </div>
-            <div id="text">
-                <h2>Hi, I'm SpikeThatMike</h2>
-                <p>I develop <b style="color: green;">NodeJS</b> applications for discord and minecraft while trying to learn new languages!</p>
-                <p>I also do free lancing / commissions in my free time outside of college.</p>
+            <div id="links">
+                <ul>
+                    <li><a class="link" href="#about">About me</a></li>
+                    <li><a class="link" href="#languages">Languages</a></li>
+                    <li><a class="link" href="#projects">Projects</a></li>
+                    <li><a class="link" href="#contacts">Contact</a></li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </nav>
+        <br>
+        <br>
+        <section id="about-me">
+            <div class="container">
+                <div id="image">
+                    <img src="https://cdn.discordapp.com/avatars/320542523586117632/45bcfe1afc1ec2221f2a57220bfe12b8.webp?size=128" alt="Profile picture">
+                </div>
+                <div id="text">
+                    <h2>Hi, I'm SpikeThatMike</h2>
+                    <p>I develop <b style="color: green;">NodeJS</b> applications for discord and minecraft while trying to learn new languages!</p>
+                    <p>I also do free lancing / commissions in my free time outside of college.</p>
+                </div>
+            </div>
+        </section>
 
-    <section id="languages">
-        <div class="">
-            <h1>Languages</h1>
-            <div id="row">
-                <figure class="language">
-                    <img src="./assets/images/javascript.ico" alt="Javascript">
-                    <div class="hidden-lang">Javascript</div>
-                </figure>
-                <figure class="language">
-                    <img src="./assets/images/html.ico" alt="HTML5">
-                    <div class="hidden-lang">HTML5</div>
-                </figure>
-                <figure class="language">
-                    <img src="./assets/images/css3.ico" alt="CSS3">
-                    <div class="hidden-lang">CSS3</div>
-                </figure>
+        <section id="languages">
+            <div class="">
+                <h1>Languages</h1>
+                <div id="row">
+                    <figure class="language">
+                        <img src="./assets/images/javascript.ico" alt="Javascript">
+                        <div class="hidden-lang">Javascript</div>
+                    </figure>
+                    <figure class="language">
+                        <img src="./assets/images/html.ico" alt="HTML5">
+                        <div class="hidden-lang">HTML5</div>
+                    </figure>
+                    <figure class="language">
+                        <img src="./assets/images/css3.ico" alt="CSS3">
+                        <div class="hidden-lang">CSS3</div>
+                    </figure>
+                </div>
             </div>
-        </div>
-    </section>
-    <br>
-    <br>
-    <br>
-    <section id="projects">
-        <div class="container">
-            <h1>Some of my projects</h1>
-            <div class="column">
-                <div class="project">
-                    <div class="name"><b style="color: green;">Faction Bot</b></div>
-                    <div>
-                        <img class="image" src="./assets/images/faction-bot.png" alt="Faction Bot">
-                        <div class="arrow" style="">&#10094</div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <section id="projects">
+            <div class="container">
+                <h1>Some of my projects</h1>
+                <div class="column">
+                    <div class="project">
+                        <div class="name"><b style="color: green;">Faction Bot</b></div>
+                        <div>
+                            <img class="image" src="./assets/images/faction-bot.png" alt="Faction Bot">
+                            <div class="arrow">&#10094</div>
+                        </div>
+                        <div class="description hidden">This application was specify made to enchance peoples experience while playing a minecraft gamemode called factions where people compete in teams. This application helped automate tasks whick now takes seconds instead of minutes and gives to ability to use commands from minecraft to interaction with discord</div>
+                        <div class="tech-used hidden">
+                            <div class="tech-desc">Some of the tech used for this project</div>
+                            <div class="tech">
+                                <img src="./assets/images/nodejs.ico" alt="NodeJS">
+                                <div>Node</div>
+                            </div>
+                            <div class="tech">
+                                <img src="./assets/images/discordjs.png" alt="Discord.JS">
+                                <div>Discord.JS</div>
+                            </div>
+                            <div class="tech">
+                                <img src="./assets/images/mineflayer.png" alt="Mineflayer">
+                                <div>Mineflayer</div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="description hidden">This application was specify made to enchance peoples experience while playing a minecraft gamemode called factions where people compete in teams. This application helped automate tasks whick now takes seconds instead of minutes and gives to ability to use commands from minecraft to interaction with discord</div>
-                    <div class="tech-used hidden">
-                        <div class="tech-desc">Some of the tech used for this project</div>
-                        <div class="tech">
-                            <img src="./assets/images/nodejs.ico" alt="NodeJS">
-                            <div>Node</div>
-                        </div>
-                        <div class="tech">
-                            <img src="./assets/images/discordjs.png" alt="Discord.JS">
-                            <div>Discord.JS</div>
-                        </div>
-                        <div class="tech">
-                            <img src="./assets/images/mineflayer.png" alt="Mineflayer">
-                            <div>Mineflayer</div>
+                    <div class="project">
+                        <div class="name"><b style="color: rgb(75, 75, 253);">Pacfish</b></div>
+                        <div><img class="image" src="./assets/images/pacfish.png" alt="Pacfish"></div>
+                        <div class="description hidden">This application is a public discord bot which anyone can invite to their discord server to help moderators manage different channels. Pacfish also includes features like a ticket system, suggestion system, ecomoncy system & more! Unfortunately, progress on this project is paused due to exams at college.</div>
+                        <div class="tech-used hidden">
+                            <div class="tech-desc">Some of the tech used for this project</div>
+                            <div class="tech">
+                                <img src="./assets/images/nodejs.ico" alt="NodeJS">
+                                <div>Node</div>
+                            </div>
+                            <div class="tech">
+                                <img src="./assets/images/discordjs.png" alt="Discord.JS">
+                                <div>Discord.JS</div>
+                            </div>
+                            <div class="tech">
+                                <img src="./assets/images/mongodb.ico" alt="MongoDB">
+                                <div>MongoDB</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="project">
-                    <div class="name"><b style="color: rgb(75, 75, 253);">Pacfish</b></div>
-                    <div><img class="image" src="./assets/images/pacfish.png" alt="Pacfish"></div>
-                    <div class="description hidden">This application is a public discord bot which anyone can invite to their discord server to help moderators manage different channels. Pacfish also includes features like a ticket system, suggestion system, ecomoncy system & more! Unfortunately, progress on this project is paused due to exams at college.</div>
-                    <div class="tech-used hidden">
-                        <div class="tech-desc">Some of the tech used for this project</div>
-                        <div class="tech">
-                            <img src="./assets/images/nodejs.ico" alt="NodeJS">
-                            <div>Node</div>
-                        </div>
-                        <div class="tech">
-                            <img src="./assets/images/discordjs.png" alt="Discord.JS">
-                            <div>Discord.JS</div>
-                        </div>
-                        <div class="tech">
-                            <img src="./assets/images/mongodb.ico" alt="MongoDB">
-                            <div>MongoDB</div>
-                        </div>
-                    </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="container">
+                <h1>Contact me!</h1>
+                <div class="social">
+                    <a target="_block" href="https://github.com/SpikeThatMike"><img src="./assets/images/github.ico" alt="https://github.com/SpikeThatMike" title="Github"></a>
+                </div>
+                <div class="social">
+                    <a target="_block" href="https://www.fiverr.com/spikethatmike"><img src="./assets/images/fiverr.ico" alt="https://www.fiverr.com/spikethatmike" title="Fiverr"></a>
+                </div>
+                <div class="social">
+                    <a target="_block" href="https://discord.gg/6rAwtJQ9nf"><img src="./assets/images/discord.ico" alt="https://discord.gg/6rAwtJQ9nf" title="Discord"></a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="contacts">
-        <div class="container">
-            <h1>Contact me!</h1>
-            <div class="social">
-                <a target="_block" href="https://github.com/SpikeThatMike"><img src="./assets/images/github.ico" alt="https://github.com/SpikeThatMike" title="Github"></a>
-            </div>
-            <div class="social">
-                <a target="_block" href="https://www.fiverr.com/spikethatmike"><img src="./assets/images/fiverr.ico" alt="https://www.fiverr.com/spikethatmike" title="Fiverr"></a>
-            </div>
-            <div class="social">
-                <a target="_block" href="https://discord.gg/6rAwtJQ9nf"><img src="./assets/images/discord.ico" alt="https://discord.gg/6rAwtJQ9nf" title="Discord"></a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html>

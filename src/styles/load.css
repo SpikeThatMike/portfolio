@@ -1,0 +1,42 @@
+.content {
+    display: none;
+}
+
+.load {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#loading-text {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    bottom: 0px;
+    left: 25px;
+    right: 0px;
+}
+
+.load>#spin {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #737375;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 50%;
+    animation: spin 1750ms infinite linear;
+}
+
+@keyframes spin{
+    100% {
+        transform: rotate(360deg);
+    }
+}
