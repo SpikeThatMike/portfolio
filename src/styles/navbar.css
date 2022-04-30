@@ -1,33 +1,49 @@
-#navbar {
+nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    float: right;
+    justify-content: space-between;
 }
 
-#navbar #links ul {
+#links {
+    margin: auto;
+}
+
+#links ul {
     margin: 0px;
     padding: 0px;
     display: flex;
 }
 
-#navbar #links li {
+#links li {
     list-style: none;
     margin: 10px;
 }
 
-#navbar #links li a {
+.link {
+    position: relative;
     color: black;
-    font-size: 20px;
-    padding:10px;
-    text-decoration: underline rgba(0, 0, 0, 0) 2px;
-    text-underline-offset: 3px;
-    transition: text-decoration-color 300ms;
+    font-size: 24px;
+    padding: 5px 10px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+}
+ 
+.link:hover{
+    color: rgb(99, 99, 99);
 }
 
-#navbar #links li a:hover {
-    background-color: rgba(172, 172, 172, 0.3);
-    border-radius: 10px;
-    text-decoration-color: black;
-    text-underline-offset: 4px;
+.link:after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 2px;
+    width: 0%;
+    right: 0px;
+    bottom: 0px;
+    transition: all 300ms ease;
+}
+
+.link:hover:after {
+    width: 100%;
+    left: 0;
 }
