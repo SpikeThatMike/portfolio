@@ -178,7 +178,7 @@ h1 {
 
 .expand img {
     margin: 10px;
-    max-width: 150px;
+    width: 350px;
 }
 
 .close {
@@ -186,12 +186,31 @@ h1 {
     right: 0%;
     padding: 0px 10px;
     font-size: 24px;
+    transition: all 500ms ease;
+}
+
+.close:hover {
+    transform: scale(1.25);
+    color: rgb(255, 45, 45);
+}
+
+
+.description {
+    max-width: 85%;
+    margin: auto;
 }
 
 .tech-used {
     display: inline-block;
     padding: 0px;
-    margin: 10px 25px;
+    margin: 5px 20px;
+}
+
+.tech-used img {
+    width: auto;
+    max-width: 75px;
+    border-radius: 10px;
+    transition: all 600ms ease;
 }
 
 .tech-hidden {
@@ -199,13 +218,7 @@ h1 {
     position: relative;
     transform: scale(0);
     transition: all 400ms ease;
-}
-
-.tech-used img {
-    width: auto;
-    max-width: 75px;
-    border-radius: 5%;
-    transition: all 600ms ease;
+    bottom: 15px;
 }
 
 .tech-used:hover img{
@@ -223,7 +236,7 @@ h1 {
 
 .project-one.active {
     visibility: visible;
-    background-color: aqua;
+    background-color: rgba(212, 212, 212, 0.99);
     opacity: 1;
 }
 
