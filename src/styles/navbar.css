@@ -35,7 +35,7 @@ nav {
 .link:after {
     content: "";
     position: absolute;
-    background-color: black;
+    background: black;
     height: 2px;
     width: 0%;
     right: 0px;

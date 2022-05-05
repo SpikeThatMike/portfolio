@@ -1,6 +1,7 @@
 #projects {
     width: 80%;
     margin: auto;
+    position: static;
 }
 
 .project {
@@ -60,13 +61,13 @@
 
 .project-one.active {
     visibility: visible;
-    background-color: rgba(212, 212, 212, 0.99);
+    background-color: rgba(177, 177, 177, 0.97);
     opacity: 1;
 }
 
 .project-two.active {
     visibility: visible;
-    background-color: rgba(212, 212, 212, 0.99);
+    background-color: rgba(177, 177, 177, 0.97);
     opacity: 1;
 }
 
@@ -84,7 +85,8 @@
 
 .expand img {
     margin: 10px;
-    width: 350px;
+    max-width: 250px;
+    width: auto;
 }
 
 .close {
@@ -142,4 +144,10 @@
 
 .tech-used:hover .tech-hidden {
     transform: scale(1);
+}
+
+@media (max-width: 450px) {
+    .brief-image {
+        width: auto;
+    }
 }
