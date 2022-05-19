@@ -2,91 +2,91 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    user-select: none;
 }
 
-#links {
-    margin: auto;
-}
-
-#links ul {
-    margin: 0px;
-    padding: 0px;
+.navbar-list {
+    margin: 0px auto;
     display: flex;
-}
-
-#links li {
+    padding: 0px;
     list-style: none;
-    margin: 10px;
 }
 
-.link {
+.navbar-item {
     position: relative;
+    padding: 5px 12px;
+    margin: 10px;
+    transition: transform 200ms ease;
+}
+
+.navbar-item a {
     color: black;
-    font-size: 24px;
-    padding: 5px 10px;
+    font-size: 22px;
     text-decoration: none;
     letter-spacing: 0.5px;
 }
- 
-.link:hover{
-    color: rgb(99, 99, 99);
+
+.navbar-item:hover {
+    transform: scale(0.95);
 }
 
-.link:after {
+.navbar-item:hover a {
+    color: rgb(53, 53, 53);
+}
+
+.navbar-item:hover a:after {
+    background-color: rgb(53, 53, 53);
+}
+
+.navbar-item a:after {
     content: "";
     position: absolute;
     background: black;
+    border-radius: 30px;
     height: 2px;
     width: 0%;
     right: 0px;
-    bottom: 0px;
-    transition: all 300ms ease;
+    bottom: 2px;
+    transition: all 400ms ease;
 }
 
-.link:hover:after {
+.navbar-item:hover a:after {
     width: 100%;
-    left: 0;
+    left: 0px;
 }
 
-#hamburger {
-    position: absolute;
-    top: 23px;
-    right: 20px;
+.hamburger {
     display: none;
     flex-direction: column;
     justify-content: space-between;
+    position: absolute;
+    top: 26px;
+    right: 26px;
     width: 30px;
     height: 20px;
     cursor: pointer;
 }
 
 .hamburger-bar {
-    height: 3px;
     width: 100%;
+    height: 3px;
     background-color: black;
-    border-radius: 10%;
+    border-radius: 20px;
 }
 
-@media (max-width: 600px) {
-    #hamburger {
-        display: flex;
-    }
-    #links {
-        margin-top: 50px;
+@media (max-width: 550px) {
+    .navbar-list {
         display: none;
-        width: 100%;
-    }
-
-    #links.active {
-        display: flex;
-    }
-
-    #links ul {
         flex-direction: column;
         width: 100%;
+        margin-top: 60px;
     }
 
-    #links li {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-item {
         text-align: center;
         border-top: 1px black solid;
         border-bottom: 1px black solid;
@@ -94,16 +94,11 @@ nav {
         padding: 4px;
     }
 
-    #links li:hover {
-        background-color: rgb(196, 196, 196);
-    }
-
-    .link {
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-
-    .link::after {
+    .navbar-item a:after {
         content: none !important;
+    }
+
+    .navbar-list.active {
+        display: flex;
     }
 }

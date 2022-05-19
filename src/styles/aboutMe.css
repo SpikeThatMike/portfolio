@@ -1,0 +1,24 @@
+#about-me {
+    margin-top: 50px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+#about-me img {
+    width: 125px;
+    border-radius: 50%;
+    box-shadow: 2px 3px 10px rgb(136, 136, 136);
+    animation: jump-in 600ms 200ms backwards;
+}
+
+#about-me h1 {
+    font-size: 28px;
+    margin: 20px 0px 10px 0px;
+    animation: fade-in 600ms 400ms backwards;
+}
+
+#about-me p {
+    font-size: 18px;
+    margin: 0px 30px;
+    animation: fade-in 600ms 500ms backwards;
+}

@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(248, 248, 248);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    margin: 0px;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    border: 1px solid rgb(230, 230, 230);
+    background-color: rgb(248, 248, 248);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(211, 211, 211);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgb(182, 182, 182);
+    border: 1px solid rgb(150, 150, 150);
+}
+
+#load {
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    background-color: white;
+}
+
+#loading-text{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    margin: auto;
+    top: 80px;
+    bottom: 0px;
+    left: 25px;
+    right: 0px;
+}
+
+#load>#spin {
+    height: 100px;
+    width: 100px;
+    border: 15px solid #737375;
+    border-top-color: #2a88e6;
+    position: absolute;
+    margin: auto;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 50%;
+    animation: spin 1750ms infinite linear;
+}
+
+@keyframes spin{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes jump-in {
+    0% {
+        transform: scale(0);
+    } 80% {
+        transform: scale(1.1);
+    } 100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);   
+    } 100% {
+        opacity: 1;
+        transform: translateY(0px);   
+    }
+}

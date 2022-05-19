@@ -1,0 +1,50 @@
+#tech {
+    text-align: center;
+    background-color: white;
+    width: 100%;
+    user-select: none;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    animation: fade-in 600ms 700ms backwards
+}
+
+#tech h1 {
+    font-size: 40px;
+    padding-top: 75px;
+}
+
+.tech {
+    display: inline-block;
+    padding: 0px;
+    margin: 25px 50px;
+    animation: fade-in 600ms 800ms backwards
+}
+
+.tech img {
+    max-width: 150px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5%;
+    transition: all 600ms ease;
+}
+
+.tech p {
+    font-size: 18px;
+    margin: 0px;
+    transform: scale(0);
+    transition: all 400ms ease;
+}
+
+.tech:hover p {
+    transform: scale(1);
+}
+
+.tech img:hover {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+.tech:last-child {
+    margin-bottom: 70px;
+}

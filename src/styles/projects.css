@@ -1,21 +1,33 @@
 #projects {
     width: 80%;
     margin: auto;
-    position: static;
+    position: relative;
+    animation: fade-in 600ms 900ms backwards;
+}
+
+#projects h1 {
+    font-size: 40px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.projects-centre {
+    text-align: center;
+    position: relative;
 }
 
 .project {
     display: inline-block;
-    margin: 3px;
+    margin: 10px;
     position: relative;
 }
 
 .brief-image {
     width: 300px;
     height: 200px;
-    position: relative;
-    border-radius: 15px;
+    border-radius: 20px;
     transition: all 400ms ease;
+    box-shadow: 2px 2px 10px black;
 }
 
 .brief-title, .brief-description, .learn-more {
@@ -28,12 +40,26 @@
 
 .brief-title {
     font-size: 36px;
-    top: -10px;
+    top: -20px;
 }
 
 .brief-description {
     font-size: 18px;
-    top: 50px;
+    top: 45px;
+}
+
+.learn-more {
+    font-size: 18px;
+    top: 160px;
+    left: 0px;
+    padding: 5px 5px;
+    margin-left: 20px;
+    color: white;
+    background-color: rgb(228, 76, 76);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    user-select: none;
 }
 
 .project:hover .brief-title, .project:hover .brief-description, .project:hover .learn-more {
@@ -42,112 +68,96 @@
 
 .project:hover .brief-image {
     transform: scale(0.98);
-    opacity: 0.5;
+    opacity: 0.4;
 }
 
-.learn-more {
-    font-size: 18px;
-    bottom: 10px;
-    margin: 20px;
-    padding: 5px;
-    color: white;
-    background-color: rgb(228, 76, 76);
-    border-radius: 10px;
-}
 
-.project-one, .project-two {
-    transition: all 1000ms ease;
-}
-
-.project-one.active {
-    visibility: visible;
-    background-color: rgba(177, 177, 177, 0.97);
-    opacity: 1;
-}
-
-.project-two.active {
-    visibility: visible;
-    background-color: rgba(177, 177, 177, 0.97);
-    opacity: 1;
-}
-
-.expand {
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    width: 80%;
-    border-radius: 20px;
-    visibility: hidden;
+.pop-up {
     z-index: 1;
-    opacity: 0;
-}
-
-.expand img {
-    margin: 10px;
-    max-width: 250px;
-    width: auto;
-}
-
-.close {
     position: absolute;
-    right: 0%;
-    padding: 0px 10px;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 110%;
+    background-color: rgba(224, 224, 224, 0.98);
+    text-align: center;
+    border-radius: 20px;
+    animation: slide-in 1000ms;
+}
+
+.pop-up-exit {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 0px 8px;
     font-size: 24px;
-    transition: all 500ms ease;
+    background-color: rgba(88, 88, 88, 0);
+    border-radius: 0px 0px 0px 25px;
+    border: none;
+    user-select: none;
 }
 
-.close:hover {
-    transform: scale(1.25);
-    color: rgb(255, 45, 45);
+.pop-up-exit:hover {
+    color: rgb(233, 89, 89);
 }
 
-
-.description {
-    max-width: 85%;
-    margin: auto;
+.pop-up-title {
+    font-size: 32px;
+    padding: 0px;
+    margin: 30px 0px 15px 0px;
 }
 
-.tech-desc {
-    font-size: 24px;
+.pop-up-image {
     width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 5px;
+    max-width: 500px;
+    border-radius: 15px;
 }
 
-.tech-used {
+.pop-up-desc {
+    font-size: 18px;
+    padding: 0px 15px;
+}
+
+.pop-up-tech-title {
+    font-size: 24px;
+    padding: 0px;
+    margin: 40px 0px 0px 0px;
+}
+
+.project-tech {
     display: inline-block;
     padding: 0px;
-    margin: 5px 20px;
+    margin: 25px 30px;
 }
 
-.tech-used img {
-    width: auto;
-    max-width: 75px;
-    border-radius: 10px;
+.project-tech img {
+    max-width: 100px;
+    margin: 0px 0px 0px 0px;
+    border-radius: 5%;
     transition: all 600ms ease;
 }
 
-.tech-hidden {
-    color: black;
-    position: relative;
+.project-tech p {
+    font-size: 16px;
+    margin: 0px;
     transform: scale(0);
     transition: all 400ms ease;
-    bottom: 15px;
 }
 
-.tech-used:hover img{
-    transform: scale(0.9);
-    opacity: 0.6;
-}
-
-.tech-used:hover .tech-hidden {
+.project-tech:hover p {
     transform: scale(1);
 }
 
-@media (max-width: 450px) {
-    .brief-image {
-        width: auto;
+.project-tech img:hover {
+    transform: scale(0.9);
+    opacity: 0.7;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-50%);
     }
 }

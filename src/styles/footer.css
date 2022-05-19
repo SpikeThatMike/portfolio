@@ -1,0 +1,8 @@
+#footer {
+    text-align: center;
+    animation: fade-in 600ms 1200ms backwards;
+}
+
+#footer {
+    margin: 75px;
+}
