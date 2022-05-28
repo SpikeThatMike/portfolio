@@ -6,8 +6,8 @@ export function ToggleDark() {
         document.body.classList.toggle("dark-theme");
     }
     return (
-        <div className="toggle-container">
+        <>
             <input type="checkbox" onClick={handleClick} className="toggle-dark"/>
-        </div>
+        </>
     )
 }

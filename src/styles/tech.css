@@ -12,6 +12,7 @@
 
 #tech h1 {
     font-size: 40px;
+    padding: 0px 20px;
     padding-top: 75px;
 }
 
@@ -34,6 +35,7 @@
     margin: 0px;
     transform: scale(0);
     transition: all 400ms ease;
+    font-weight: 600;
 }
 
 .tech:hover p {
@@ -47,4 +49,19 @@
 
 .tech:last-child {
     margin-bottom: 70px;
+}
+
+@media (max-width: 400px) {
+    #tech h1 {
+        font-size: 32px;
+    }
+
+    .tech img {
+        max-width: 125px;
+    }
+
+    .tech p {
+        font-size: 16px;
+    }
+
 }

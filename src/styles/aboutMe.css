@@ -22,3 +22,17 @@
     margin: 0px 30px;
     animation: fade-in 600ms 500ms backwards;
 }
+
+@media (max-width: 400px) {
+    #about-me img {
+        width: 100px;
+    }
+
+    #about-me h1 {
+        font-size: 24px;
+    }
+
+    #about-me p {
+        font-size: 16px;
+    }
+}

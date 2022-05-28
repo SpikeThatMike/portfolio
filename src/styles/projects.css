@@ -104,7 +104,7 @@
 
 .pop-up-title {
     font-size: 32px;
-    padding: 0px;
+    padding: 0px 10px;
     margin: 30px 0px 15px 0px;
 }
 
@@ -121,7 +121,7 @@
 
 .pop-up-tech-title {
     font-size: 24px;
-    padding: 0px;
+    padding: 0px 10px;
     margin: 40px 0px 0px 0px;
 }
 
@@ -140,6 +140,7 @@
 
 .project-tech p {
     font-size: 16px;
+    font-weight: 600;
     margin: 0px;
     transform: scale(0);
     transition: all 400ms ease;
@@ -160,5 +161,65 @@
     }
     100% {
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .brief-image {
+        max-width: 250px;
+    }
+
+    .brief-title {
+        padding-top: 5px;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 400px) {
+    #projects h1 {
+        font-size: 32px;
+    }
+
+    .brief-image {
+        max-width: 125px;
+    }
+
+    .brief-title, .brief-description, .learn-more {
+        padding: 0px 10px;
+    }
+
+    .brief-title {
+        padding-top: 50px;
+        padding-left: 10px;
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .brief-description {
+        display: none;
+    }
+
+    .learn-more {
+        font-size: 16px;
+        padding: 5px 5px;
+        margin-left: 15px;
+        color: white;
+        background-color: rgb(228, 76, 76);
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    .project-tech {
+        margin: 10px;
+    }
+
+    .project-tech img {
+        max-width: 75px;
+    }
+    
+    .project-tech p {
+        font-size: 14px;
     }
 }
