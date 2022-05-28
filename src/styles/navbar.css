@@ -102,3 +102,80 @@ nav {
         display: flex;
     }
 }
+
+.toggle-container {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    right: 0px;
+}
+
+.toggle-dark {
+    appearance: none;
+    height: 30px;
+    width: 50px;
+    background-color: black;
+    position: absolute;
+    right: 10px;
+    top: -50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.toggle-dark:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    top: 5px;
+    left: 5px;
+}
+
+.toggle-dark:hover {
+    transform: scale(0.92);
+}
+
+.dark-theme {
+    background-color: rgb(20, 20, 20);
+    color: white;
+}
+
+.dark-theme .toggle-dark {
+    background-color: white;
+}
+
+.dark-theme .toggle-dark:after {
+    background-color: black;
+    left: 26px;
+}
+
+.dark-theme .navbar-item a {
+    color: white;
+}
+
+.dark-theme .navbar-item a:after {
+    background-color: white;
+}
+
+.dark-theme #tech {
+    background-color: rgb(16, 16, 16);
+}
+
+.dark-theme .pop-up {
+    background-color: rgb(36, 36, 36);
+}
+
+.dark-theme .pop-up-exit {
+    color: white;
+}
+
+.dark-theme #contacts {
+    background-color: rgb(16, 16, 16);
+}
+
+.dark-theme .contact img {
+    background-color: white;
+}

@@ -43,6 +43,30 @@ const projects = [
             },
         ]
     },
+    {
+        name: "Pacfish Music",
+        briefDescription: "Pacfish Music is a discord music player which supports many streaming platforms",
+        description: "Pacfish Music offers 24/7 high quality music to any discord server for free. We support Youtube, Spotify, SoundCloud and Deezer songs (More coming soon!)",
+        imageFile: "pacfish.png",
+        tech: [
+            {
+                name: "NodeJS",
+                imageFile: "nodejs.ico",
+            },
+            {
+                name: "Discord.JS",
+                imageFile: "discord.ico",
+            },
+            {
+                name: "Play-dl",
+                imageFile: "play-dl.png",
+            },
+            {
+                name: "MongoDB",
+                imageFile: "mongodb.ico",
+            },
+        ]
+    },
     // {
     //     name: "Todo list",
     //     briefDescription: "Easy to use, web based todo list",
