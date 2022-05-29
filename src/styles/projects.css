@@ -1,6 +1,7 @@
 #projects {
     width: 80%;
     margin: auto;
+    margin-bottom: 100px;
     position: relative;
     animation: fade-in 600ms 900ms backwards;
 }

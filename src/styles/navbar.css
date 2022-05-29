@@ -149,10 +149,6 @@ nav {
     color: white;
 }
 
-.dark-theme .toggle-dark {
-    transition: all 400ms ease;
-    background-color: white;
-}
 
 .dark-theme .toggle-dark:after {
     transition: all 400ms ease;
@@ -160,28 +156,22 @@ nav {
     left: 26px;
 }
 
-.dark-theme .navbar-item a {
-    transition: all 400ms ease;
-    color: white;
-}
-
-.dark-theme .navbar-item a:after {
-    transition: all 400ms ease;
-    background-color: white;
-}
-
+.dark-theme .contact img,
+.dark-theme .toggle-dark,
+.dark-theme .navbar-item a:after,
 .dark-theme .hamburger-bar {
     transition: all 400ms ease;
     background-color: white;
 }
 
-.dark-theme #tech {
-    background-color: rgb(16, 16, 16);
-    transition: all 400ms ease;
+.dark-theme .navbar-item a {
+    color: white;
 }
 
-.dark-theme .pop-up {
-    background-color: rgb(36, 36, 36);
+.dark-theme .pop-up,
+.dark-theme #contacts,
+.dark-theme #tech {
+    background-color: rgb(16, 16, 16);
     transition: all 400ms ease;
 }
 
@@ -189,14 +179,6 @@ nav {
     color: white;
 }
 
-.dark-theme #contacts {
-    background-color: rgb(16, 16, 16);
-    transition: all 400ms ease;
-}
-
-.dark-theme .contact img {
-    background-color: white;
-}
 
 @media (max-width: 400px) {
     .hamburger {

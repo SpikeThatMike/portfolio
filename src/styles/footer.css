@@ -1,8 +1,65 @@
 #footer {
     text-align: center;
     animation: fade-in 600ms 1200ms backwards;
+    padding: 75px;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    font-size: 14px;
+    user-select: none;
 }
 
-#footer {
-    margin: 75px;
+.image {
+    position: relative;
+    width: 100px;
+    margin: auto;
+}
+
+.image img {
+    display: block;
+    margin: 0px auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: all 400ms ease;
+}
+
+.back-to-top {
+    position: absolute;
+    transform: scale(0);
+    font-size: 16px;
+    top: 22px;
+    right: -90px;
+    text-decoration: none;
+    color: white;
+    transition: all 400ms ease;
+}
+
+.contact {
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    width: 50px;
+    display: inline-block;
+    margin: 25px;
+    transition: transform 500ms ease;
+}
+
+.contact:hover {
+    transform: scale(0.9);
+}
+
+.image:hover .back-to-top{
+    transform: scale(1);
+}
+
+.image img:hover{
+    transform: scale(0.95);
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
