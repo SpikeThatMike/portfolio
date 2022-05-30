@@ -16,6 +16,7 @@ export default function ProjectPopup({item, close}) {
                 })}
             </div>
             {(item?.github) ? <p className="pop-up-github">The source code for this is avaliable <a href={item.github} target="_block">Here</a></p> : ""}
+            {(item?.discordInvite) ? <p className="pop-up-github">Invite me to your discord <a href={item.discordInvite} target="_block">Here</a></p> : ""}
         </div>
     )
 }
