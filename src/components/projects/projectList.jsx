@@ -67,65 +67,7 @@ const projects = [
             },
         ],
         discordInvite: "https://discord.com/api/oauth2/authorize?client_id=979497695788019742&permissions=139589935169&scope=bot%20applications.commands",
-    },
-    // {
-    //     name: "Todo list",
-    //     briefDescription: "Easy to use, web based todo list",
-    //     description: "This is one of my first react projects and the goal was to design a simple to use interface without worrying too much about the CSS styling. I didn't design this to be responsive on different devices so it might be disproportional.",
-    //     imageFile: "pacfish.png",
-    //     tech: [
-    //         {
-    //             name: "NodeJS",
-    //             imageFile: "nodejs.ico",
-    //         },
-    //         {
-    //             name: "React",
-    //             imageFile: "react.ico",
-    //         },
-    //     ],
-    //     github: ""
-    // },
-    // {
-    //     name: "Alt manager",
-    //     briefDescription: "This application was made to make hosting multiple minecraft accounts at once easy.",
-    //     description: "This will help you manage your minecraft accounts using discord and in-game minecraft commands.",
-    //     imageFile: "pacfish.png",
-    //     tech: [
-    //         {
-    //             name: "NodeJS",
-    //             imageFile: "nodejs.ico",
-    //         },
-    //         {
-    //             name: "Discord.JS",
-    //             imageFile: "discord.ico",
-    //         },
-    //         {
-    //             name: "Minecraft Protocol",
-    //             imageFile: "mineflayer.png",
-    //         },
-    //     ],
-    //     github: "https://github.com/SpikeThatMike/portfolio"
-    // },
-    // {
-    //     name: "Crypto Prices",
-    //     briefDescription: "Web dashboard which displays the most vaulable currencies with the ability to search.",
-    //     description: "This web based bashboard uses an API to get the most recent crypto currency prices and displays the recent changes in the last 24 hours. You also have the ability to search for specific currencies to see more information.",
-    //     imageFile: "pacfish.png",
-    //     tech: [
-    //         {
-    //             name: "NodeJS",
-    //             imageFile: "nodejs.ico",
-    //         },
-    //         {
-    //             name: "React",
-    //             imageFile: "react.ico",
-    //         },
-    //         {
-    //             name: "Minecraft Protocol",
-    //             imageFile: "mineflayer.png",
-    //         },
-    //     ],
-    // },
+    }
 ]
 
 export default function ProjectList() {
